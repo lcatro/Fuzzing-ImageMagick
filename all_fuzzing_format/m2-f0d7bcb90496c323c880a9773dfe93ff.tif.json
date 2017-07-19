@@ -1,0 +1,91 @@
+[{
+  "image": {
+    "name": "all_fuzzing_format/m2-f0d7bcb90496c323c880a9773dfe93ff.tif.json",
+    "baseName": "m2-f0d7bcb90496c323c880a9773dfe93ff.tif",
+    "format": "TIFF",
+    "formatDescription": "TIFF",
+    "mimeType": "image/tiff",
+    "class": "DirectClass",
+    "geometry": {
+      "width": 512,
+      "height": 384,
+      "x": 0,
+      "y": 0
+    },
+    "units": "PixelsPerInch",
+    "type": "Bilevel",
+    "baseType": "TrueColor",
+    "endianess": "Undefined",
+    "colorspace": "sRGB",
+    "depth": 1,
+    "baseDepth": 8,
+    "channelDepth": {
+      "gray": 1
+    },
+    "pixels": 589824,
+    "channelStatistics": {
+      "Gray": {
+        "min": "0",
+        "max": "0",
+        "mean": "0",
+        "standardDeviation": "0",
+        "kurtosis": "-3",
+        "skewness": "0"
+      }
+    },
+    "renderingIntent": "Perceptual",
+    "gamma": 0.454545,
+    "chromaticity": {
+      "redPrimary": {
+        "x": 0.64,
+        "y": 0.33
+      },
+      "greenPrimary": {
+        "x": 0.3,
+        "y": 0.6
+      },
+      "bluePrimary": {
+        "x": 0.15,
+        "y": 0.06
+      },
+      "whitePrimary": {
+        "x": 0.3127,
+        "y": 0.329
+      }
+    },
+    "matteColor": "#BDBDBD",
+    "backgroundColor": "#FFFFFF",
+    "borderColor": "#DFDFDF",
+    "transparentColor": "#00000000",
+    "interlace": "None",
+    "intensity": "Undefined",
+    "compose": "Over",
+    "pageGeometry": {
+      "width": 512,
+      "height": 384,
+      "x": 0,
+      "y": 0
+    },
+    "dispose": "Undefined",
+    "iterations": 0,
+    "compression": "JPEG",
+    "orientation": "TopLeft",
+    "properties": {
+      "date:create": "2017-06-10T17:14:27+08:00",
+      "date:modify": "2017-06-10T17:14:27+08:00",
+      "signature": "7971f869259aee9bd631bba70e10a49cf66fea3ac7fd16126a064111f87da460",
+      "tiff:alpha": "unspecified",
+      "tiff:endian": "msb",
+      "tiff:photometric": "YCBCR",
+      "tiff:rows-per-strip": "16"
+    },
+    "tainted": false,
+    "filesize": "0B",
+    "numberPixels": "196608",
+    "pixelsPerSecond": "6.5536MB",
+    "userTime": "0.030u",
+    "elapsedTime": "0:01.029",
+    "version": "file:///usr/local/share/doc/ImageMagick-7/index.html"
+  }
+}
+]

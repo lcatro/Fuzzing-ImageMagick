@@ -1,0 +1,73 @@
+diff --git a/src/bitmap_io.c b/src/bitmap_io.c
+index 26c532e..63f291f 100644
+--- a/src/bitmap_io.c
++++ b/src/bitmap_io.c
+@@ -693,7 +693,7 @@ static int bm_readbody_bmp(FILE *f, double threshold, potrace_bitmap_t **bmp) {
+ 	    break;
+ 	  }
+           realheight = y+1;
+-	  BM_UPUT(bm, x, y, col[i&1]);
++	  BM_PUT(bm, x, y, col[i&1]);
+ 	  x++;
+ 	}
+       } else if (c == 0) {
+@@ -751,7 +751,7 @@ static int bm_readbody_bmp(FILE *f, double threshold, potrace_bitmap_t **bmp) {
+ 	    break;
+ 	  }
+           realheight = y+1;
+-	  BM_UPUT(bm, x, y, COLTABLE(c));
++	  BM_PUT(bm, x, y, COLTABLE(c));
+ 	  x++;
+ 	}
+       } else if (c == 0) {
+diff --git a/src/greymap.c b/src/greymap.c
+index 785774d..720b92c 100644
+--- a/src/greymap.c
++++ b/src/greymap.c
+@@ -849,7 +849,7 @@ static int gm_readbody_bmp(FILE *f, greymap_t **gmp) {
+ 	    break;
+ 	  }
+           realheight = y+1;
+-	  GM_UPUT(gm, x, y, col[i&1]);
++	  GM_PUT(gm, x, y, col[i&1]);
+ 	  x++;
+ 	}
+       } else if (c == 0) {
+@@ -907,7 +907,7 @@ static int gm_readbody_bmp(FILE *f, greymap_t **gmp) {
+ 	    break;
+ 	  }
+           realheight = y+1;
+-	  GM_UPUT(gm, x, y, COLTABLE(c));
++	  GM_PUT(gm, x, y, COLTABLE(c));
+ 	  x++;
+ 	}
+       } else if (c == 0) {
+diff --git a/src/greymap.h b/src/greymap.h
+index 7471ebf..a1cea51 100644
+--- a/src/greymap.h
++++ b/src/greymap.h
+@@ -41,7 +41,7 @@ typedef struct greymap_s greymap_t;
+ #define GM_INC(gm, x, y, b) (gm_safe(gm, x, y) ? GM_UINC(gm, x, y, b) : 0)
+ #define GM_INV(gm, x, y) (gm_safe(gm, x, y) ? GM_UINV(gm, x, y) : 0)
+ #define GM_PUT(gm, x, y, b) (gm_safe(gm, x, y) ? GM_UPUT(gm, x, y, b) : 0)
+-#define GM_BGET(gm, x, y) GM_UGET(gm, gm_bound(x, gm->w), gm_bound(y, gm->h))
++#define GM_BGET(gm, x, y) ((gm)->w == 0 || (gm)->h == 0 ? 0 : GM_UGET(gm, gm_bound(x, (gm)->w), gm_bound(y, (gm)->h)))
+ 
+ /* modes for cutting off out-of-range values. The following names
+    refer to winding numbers. I.e., make a pixel black if winding
+diff --git a/src/mkbitmap.c b/src/mkbitmap.c
+index 3497659..593aa65 100644
+--- a/src/mkbitmap.c
++++ b/src/mkbitmap.c
+@@ -332,9 +332,9 @@ static void *interpolate_cubic(greymap_t *gm, int s, int bilevel, double c) {
+ 	    v += window[k][i] * poly[l][i];
+ 	  }
+ 	  if (bilevel) {
+-	    BM_UPUT(bm_out, x*s+l, y*s+k, v < c1);
++	    BM_PUT(bm_out, x*s+l, y*s+k, v < c1);
+ 	  } else {
+-	    GM_UPUT(gm_out, x*s+l, y*s+k, v);
++	    GM_PUT(gm_out, x*s+l, y*s+k, v);
+ 	  }	    
+ 	}
+       }

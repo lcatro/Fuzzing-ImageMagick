@@ -1,0 +1,16 @@
+id=MagickCache
+magick-signature=1805670844
+class=DirectClass  colors=0  alpha-trait=Undefined
+number-channels=3  number-meta-channels=0
+columns=800  rows=400 depth=8
+colorspace=sRGB
+compression=JPEG2000  quality=0
+page=800x400+0+0
+rendering-intent=Perceptual
+gamma=0.454545
+red-primary=0.64,0.33  green-primary=0.3,0.6  blue-primary=0.15,0.06
+white-point=0.3127,0.329
+date:create=2017-06-10T17:15:06+08:00
+date:modify=2017-06-10T17:15:06+08:00
+
+:

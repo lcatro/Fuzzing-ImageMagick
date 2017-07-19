@@ -1,0 +1,136 @@
+[{
+  "image": {
+    "name": "all_fuzzing_format/APNG-from-GIF-Mouse.png.json",
+    "baseName": "APNG-from-GIF-Mouse.png",
+    "format": "PNG",
+    "formatDescription": "PNG",
+    "mimeType": "image/png",
+    "class": "DirectClass",
+    "geometry": {
+      "width": 235,
+      "height": 148,
+      "x": 0,
+      "y": 0
+    },
+    "units": "Undefined",
+    "type": "PaletteAlpha",
+    "baseType": "TrueColorAlpha",
+    "endianess": "Undefined",
+    "colorspace": "sRGB",
+    "depth": 16,
+    "baseDepth": 8,
+    "channelDepth": {
+      "alpha": 1,
+      "red": 8,
+      "green": 8,
+      "blue": 1
+    },
+    "pixels": 139120,
+    "imageStatistics": {
+      "Overall": {
+        "min": "0",
+        "max": "255",
+        "mean": "27.3567",
+        "standardDeviation": "73.8299",
+        "kurtosis": "5.02472",
+        "skewness": "2.60349"
+      }
+    },
+    "channelStatistics": {
+      "Alpha": {
+        "min": "0",
+        "max": "255",
+        "mean": "43.6975",
+        "standardDeviation": "96.0919",
+        "kurtosis": "1.04214",
+        "skewness": "1.74416"
+      },
+      "Red": {
+        "min": "0",
+        "max": "252",
+        "mean": "9.01495",
+        "standardDeviation": "33.4585",
+        "kurtosis": "33.018",
+        "skewness": "5.47049"
+      },
+      "Green": {
+        "min": "0",
+        "max": "252",
+        "mean": "28.3953",
+        "standardDeviation": "73.6376",
+        "kurtosis": "4.68858",
+        "skewness": "2.52375"
+      },
+      "Blue": {
+        "min": "0",
+        "max": "252",
+        "mean": "28.3189",
+        "standardDeviation": "73.6396",
+        "kurtosis": "4.69819",
+        "skewness": "2.52661"
+      }
+    },
+    "alpha": "#00000000",
+    "renderingIntent": "Perceptual",
+    "gamma": 0.454545,
+    "chromaticity": {
+      "redPrimary": {
+        "x": 0.64,
+        "y": 0.33
+      },
+      "greenPrimary": {
+        "x": 0.3,
+        "y": 0.6
+      },
+      "bluePrimary": {
+        "x": 0.15,
+        "y": 0.06
+      },
+      "whitePrimary": {
+        "x": 0.3127,
+        "y": 0.329
+      }
+    },
+    "matteColor": "#BDBDBD",
+    "backgroundColor": "#FFFFFF",
+    "borderColor": "#DFDFDF",
+    "transparentColor": "#00000000",
+    "interlace": "None",
+    "intensity": "Undefined",
+    "compose": "Over",
+    "pageGeometry": {
+      "width": 235,
+      "height": 148,
+      "x": 0,
+      "y": 0
+    },
+    "dispose": "Undefined",
+    "iterations": 0,
+    "compression": "Zip",
+    "orientation": "Undefined",
+    "properties": {
+      "date:create": "2017-06-10T17:07:23+08:00",
+      "date:modify": "2017-06-10T17:07:23+08:00",
+      "png:IHDR.bit-depth-orig": "8",
+      "png:IHDR.bit_depth": "8",
+      "png:IHDR.color-type-orig": "3",
+      "png:IHDR.color_type": "3 (Indexed)",
+      "png:IHDR.interlace_method": "0 (Not interlaced)",
+      "png:IHDR.width,height": "235, 148",
+      "png:PLTE.number_colors": "12",
+      "png:sRGB": "intent=0 (Perceptual Intent)",
+      "png:text": "1 tEXt/zTXt/iTXt chunks were found",
+      "png:tRNS": "chunk was found",
+      "signature": "d98b7f9114162eec6b0e6c3d7b33951d59904d9b6dea04a5e3ecbff3e25e49fb",
+      "Software": "gif2apng.sf.net"
+    },
+    "tainted": false,
+    "filesize": "0B",
+    "numberPixels": "34780",
+    "pixelsPerSecond": "695600B",
+    "userTime": "0.210u",
+    "elapsedTime": "0:01.050",
+    "version": "file:///usr/local/share/doc/ImageMagick-7/index.html"
+  }
+}
+]
