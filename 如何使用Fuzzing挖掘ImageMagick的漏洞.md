@@ -419,7 +419,7 @@
     ./magick convert test_image output.art
   ```
 
- 	ImageMagick 库支持很多格式的图像转换,更多信息可以在SourceInsight 里搜索Write*Image() 函数：
+  ImageMagick 库支持很多格式的图像转换,更多信息可以在SourceInsight 里搜索Write*Image() 函数：
 
   ![image](write_image.png)
 
@@ -429,7 +429,7 @@
     imagemagick_output_format = ['output.aai','output.art','output.avs','output.bgr','output.bmp','output.braille','output.cals','output.cin','output.cip','output.clipboard','output.cmyk','output.dds','output.debug','output.dib','output.dpx','output.ept','output.exr','output.fax','output.fits','output.flif','output.fpx','output.gif','output.gray','output.histogram','output.hrz','output.html','output.icon','output.info','output.inline','output.ipl','output.jbig','output.jp2','output.jpeg','output.json','output.magick','output.map','output.mask','output.mat','output.matte','output.meta','output.miff','output.mono','output.mpc','output.mpeg','output.mpr','output.msl','output.mtv','output.mvg','output.null','output.otb','output.palm','output.pcd','output.pcl','output.pcx','output.pdb','output.pdf','output.pgx','output.pict','output.jng','output.mng','output.png','output.pnm','output.ps','output.ps2','output.ps3','output.psd','output.raw','output.rgb','output.rgf','output.sgi','output.sixelt','output.sun','output.svg','output.tga','output.thumbnail','output.ptif','output.tiff','output.txt','output.uil','output.uyvy','output.vicar','output.vid','output.viff','output.vips','output.wbmp','output.webp','output.xbm','output.picon','output.xpm','output.xtrn','output.xwd','output.ycbcr','output.ps3mask','output.group4','output.yuv''output.x']
   ```
 
-  	然后给ImageMagick 来运行即可,代码如下:
+  然后给ImageMagick 来运行即可,代码如下:
 
   ```
     def run_imagemagick_convert(input_file,output_file) :
@@ -548,7 +548,7 @@
             
   ```
 
-​	在此限于篇幅,所有Fuzzing 的完整代码在我的github (https://github.com/lcatro/Fuzzing-ImageMagick).执行效果如下:
+​	在此限于篇幅,所有Fuzzing 的完整代码在我的github ![](https://github.com/lcatro/Fuzzing-ImageMagick) .执行效果如下:
 
   ![image](write_fuzzer.png)
 
