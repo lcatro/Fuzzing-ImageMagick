@@ -548,11 +548,11 @@
             
   ```
 
-​	在此限于篇幅,所有Fuzzing 的完整代码在我的github  ....   中.执行效果如下:
+​	在此限于篇幅,所有Fuzzing 的完整代码在我的github (https://github.com/lcatro/Fuzzing-ImageMagick).执行效果如下:
 
   ![image](write_fuzzer.png)
 
-​	笔者已经使用这个Python Fuzzer 收获了至少20 个CVE ,在此通过这篇文章和各位读者分析对于二进制软件的Fuzzing 的一些常用技术,预祝大家顺利挖到CVE .下面是挖掘到的漏洞列表：
+​	笔者已经使用这个Python Fuzzer 收获了至少20 个CVE (数据生成挖到了3 个崩溃,利用样本测试ImageMagick 写测试至少获得了17 个崩溃),在此通过这篇文章和各位读者分析对于二进制软件的Fuzzing 的一些常用技术,预祝大家顺利挖到CVE .下面是挖掘到的漏洞列表：
 
   ![image](imagemagick_bug.png)
 
